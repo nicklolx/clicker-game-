@@ -1,7 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Connection to our css file -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- Game title -->
+        <title>Gem Miner Game</title>
+        <style>
+            #startScreen {
+                text-align: center;
+                margin-top: 20%;
+            }
+
+            #startButton {
+                padding: 10px 20px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
     <body>
-        <h1>Score:</h1>
-        <h2 id="score">0</h2>
+        <div id="startScreen">
+            <!-- The start screen for the game -->
+            <h1>Welcome to My Clicker Game</h1>
+            <!-- Start Button -->
+            <button id="startButton">Start Playing</button>
+        </div>
+        <!-- Title display -->
+        <div id="gameScreen" style="display: none">
+            <h1>Gem Miner</h1>
+
+            <main>
+                <!-- score -->
+                <p>Gems Mined: <span id="score">0</span></p>
+                <!-- button to click -->
+                <img
+                    id="clicker"
+                    src="./styles/images/pngimg.com - ruby_PNG2.png"
+                    alt=""
+                    class="gem-image"
+                    draggable="false"
+                />
+
+                <!-- Autoclickers -->
+                <button id="miner" disabled>
+                    Buy Miners - Cost: 20, Purchased: 0
+                </button>
+                <button id="drill" disabled>
+                    Buy Drilling Crew - Cost: 50, Purchased: 0
+                </button>
+                <button id="gemInc" disabled>
+                    Buy Gem inc. - Cost: 100, Purchased: 0
+                </button>
+            </main>
+        </div>
+        <!-- Connecting the html to the javascript files -->
+        <script src="src/main.js"></script>
+        <script src="src/building.js"></script>
+        <!-- The function to enable the start screen -->
+        <script>
+            document
+                .getElementById('startButton')
+                .addEventListener('click', function () {
+                    document.getElementById('startScreen').style.display =
+                        'none';
+                    document.getElementById('gameScreen').style.display =
+                        'block';
+                });
+        </script>
     </body>
 </html>

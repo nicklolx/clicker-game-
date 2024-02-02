@@ -1,0 +1,65 @@
+/* styles.css */
+body {
+    background-image: url('images/Mineshaft_B.webp');
+    background-color: #000000;
+    place-items: center;
+    height: 100vh;
+    margin: 250px;
+    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    color: #e01212; /* Title color */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main {
+    text-align: center;
+    margin-top: 200px;
+}
+
+p {
+    /* Score text color */
+    color: #af321c;
+}
+.gem-image {
+    display: grid;
+    place-items: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.gem-image:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.gem-image:active {
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+/* Button colors when affordable */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000000;
+    color: rgba(255, 43, 43, 0.952);
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Only for buttons which are disabled when you can't afford it */
+:disabled {
+    background-color: #000000; /* Button Box Color */
+    color: #750505; /* Text Color for Buttons */
+    opacity: 0.8;
+}
