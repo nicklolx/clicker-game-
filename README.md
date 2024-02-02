@@ -12,4 +12,4 @@ Language: CSS, JavaScript, and HTML
 # Screenshot
 
 ![Image from the documentation]
-(![image](https://github.com/nicklolx/clicker-game-/assets/52044226/cd3b69df-10d2-476b-bbf9-033765f6886e)
+![image](https://github.com/nicklolx/clicker-game-/assets/52044226/cd3b69df-10d2-476b-bbf9-033765f6886e)
