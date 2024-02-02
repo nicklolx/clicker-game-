@@ -41,7 +41,7 @@ const achievementThresholds = {
     100: "Congratulations! You've reached 100 score!",
     500: "Amazing! You've reached 500 score!",
     1000: "Incredible! You've reached 1000 score!",
-    1000000: "You've taken over the industry of fishing!",
+    1000000: "You've gain monopoly of the gem industry",
 };
 
 // Set to store achieved milestones
@@ -72,7 +72,7 @@ document.getElementById('clicker').addEventListener('click', () => {
     checkAchievements(score);
 });
 
-/* on click buy the next clicker which is the fisherman, also has a price increase */
+/* on click buy the next clicker which is the miner, also has a price increase */
 document.getElementById('miner').addEventListener('click', () => {
     purchaseSound.currentTime = 0;
     purchaseSound.play();
@@ -86,7 +86,7 @@ document.getElementById('miner').addEventListener('click', () => {
     }
 });
 
-/* on click buy fishing net crew which autoclicks even more fish, also has a price increase */
+/* on click buy a drilling crew which autoclicks even more gems, also has a price increase */
 document.getElementById('drill').addEventListener('click', () => {
     purchaseSound.currentTime = 0;
     purchaseSound.play();
@@ -100,7 +100,7 @@ document.getElementById('drill').addEventListener('click', () => {
     }
 });
 
-/* on click buy fisherman corporation which earns you a lot of fish every so often also increases pricing */
+/* on click buy gem inc which earns you a lot of gem every so often also increases pricing */
 document.getElementById('gemInc').addEventListener('click', () => {
     purchaseSound.currentTime = 0;
     purchaseSound.play();
